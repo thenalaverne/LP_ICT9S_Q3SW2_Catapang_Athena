@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>chris sturniolo</title>
+</head>
+<body>
+<div class="container">
+	<details ontoggle="message()">
+		<summary>Instruction</summary>
+		<i> Enter the two numbers then find its answer </i>
+	</details>
+
+</div>
+
+<br>
+
+<form>
+	<label>Enter the 1st number</label>
+<input type="number" id="num1" placeholder="type here...">
+
+<br>
+
+	<label>Enter the 2nd number</label>
+<input type="number" id="num2" placeholder="type here...">
+
+
+<button type="submit" onmouseover="plus()"> PLUS </button>
+<span> <h1> RESULT </h1> </span>
+
+</form>
+
+<script>
+	function message() {
+		alert("try it");
+	}
+
+function plus() {
+	var add1 = document.getElementById("num1").value;
+	var add2 = document.getElementById("num2").value;
+	var sum = Number(add1) + Number(add2);
+
+	document.getElementById('result').innerHTML= 'Answer is'+''+sum;
+
+function minus() {
+	var minus1 = document.getElementById("num1").value;
+	var minus2 = document.getElementById("num2").value;
+	var sum = Number(minus1) + Number(minus2);
+
+	document.getElementById('result').innerHTML= 'Answer is'+''+difference;
+}
+
+
+</script>
+
+</body>
+</html>
